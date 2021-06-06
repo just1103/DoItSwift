@@ -79,7 +79,7 @@ class ViewController: UIViewController {
                                                                             ACTION in self.lampImg.image = self.imgOff
                                                                             self.isLampOn = false
         }
-        let removeAction = UIAlertAction(title: "네, 제거합니다.", style: .destructive, handler: { // // style: .default가 아니라 .destructive (*빨간색 글씨로 표시됨. Apply a style that indicates the action might change or delete data.)
+        let removeAction = UIAlertAction(title: "네, 제거합니다.", style: .destructive, handler: { // style: .default가 아니라 .destructive (*빨간색 글씨로 표시됨. Apply a style that indicates the action might change or delete data.)
                                                                                         ACTION in self.lampImg.image = self.imgRemove
                                                                                         self.isLampOn = false // 왜?
         })
