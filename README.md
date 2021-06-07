@@ -35,4 +35,8 @@
 * 4.2_Alarm 및 6_Alert를 응용함. 현재 시간 (Timer로 업데이트)과 선택 시간 (Date Picker에서 사용자가 선택)이 일치하면, UIAlertController/UIAlertAction을 활용하여 알림 메시지를 나타냄
 * 사용자가 Alert를 확인한 이후에는 1분 동안 다시 알림 메시지가 나타나지 않도록 설정함
 
-
+## 7_Web View
+* WebView (WKWebView) 및 UIButton (Go button)을 통해 사용자가 UITextField에 입력한 URL 주소의 웹페이지로 이동함
+* UIAcitivityIndicator (WKNavigationDelegate protocol 상속, navigationDelegate object 사용 등)를 통해 사용자에게 웹페이지가 로딩 중임을 알려줌
+* 4개 UIButton (Site1, Site2, HTML, File)을 통해 지정된 주소로 이동하고, html string 코드 및 html file의 내용을 웹페이지에 나타냄
+* 하단의 4개 아이콘 (정지, 새로고침, 이전 페이지, 다음 페이지)를 통해 페이지 로딩을 중지하고, 현재 페이지를 새로고침하고, 이전/다음 페이지로 이동하는 기능
