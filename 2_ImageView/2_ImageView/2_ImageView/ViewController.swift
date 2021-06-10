@@ -4,6 +4,9 @@
 //
 //  Created by Hyoju Son on 2021/04/22.
 //
+// README.md
+// * UIImageView를 활용하여 UIButton을 누르면 image를 확대/축소하고, UISwitch를 누르면 image를 변경함
+
 
 import UIKit
 

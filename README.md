@@ -1,5 +1,6 @@
 # DoItSwift
-&lt;Do It Swift> example source code. (Xcode, Swift, StoryBoard)
+&lt;Do It Swift> example source code. (Xcode, Swift, StoryBoard) 
+
 
 # 프로젝트 소개
 ## 1_HelloWorld
@@ -13,7 +14,7 @@
 * 사용자 편의를 위해 1번 image에서 이전을 누르면 6번으로 이동, 6번 image에서 Next 버튼을 누르면 1번으로 이동하는 기능을 추가
 
 ## 4_DatePicker
-* Timer Class (#selector Struct, NSDate Class)를 통해 1초 단위로 정보를 업데이트하며,  UILabel에 현재 시간을 나타냄
+* Timer Class (#selector Struct, NSDate Class)를 통해 1초 단위로 정보를 업데이트하며, UILabel에 현재 시간을 나타냄
 * UIDatePicker (DateFormatter Class)를 활용하여 사용자의 선택 시간을 UILabel에 나타냄
 
 ### 4.2_Alarm
@@ -44,4 +45,11 @@
 ### 7.2_Web App
 * 앱이 시작될 때 WebView를 통해 HTML 파일을 읽어 디스플레이하고, Link를 통해 workflowy 웹사이트로 이동함
 
+## 8_Map View
+* Map View (MKMapView-CLLocationManagerDelegate protocol 상속, CLLocationManager Class 사용 등) 및 UISegmentedControl (총 3개)을 통해 사용자가 Segment를 터치하면 각각 사용자의 현재 위치, 지정 장소1, 지정 장소2를 Map에 나타냄
+* 사용자의 현재 위치가 업데이트 되면 Map을 이동함. 이때 현재 위치의 위도/경도를 활용하여 주소 (국가/지역/도로명)를 구하고, 하단에 텍스트로 나타냄
+* 지정 장소1, 지정 장소2에 핀을 설치하고, 하단에 위치 설명 텍스트를 나타냄. 핀을 터치하면 장소명 (title) 및 주소 (subtitle)를 보여주는 기능을 추가
+* 위도/경도 외에도 범위 (delta span) 수치를 활용하여 Map의 배율을 조정 가능함
 
+### 8.2_Map My Home
+* 8_MapView를 응용함. Segment를 추가하여 My Home에 핀을 설치함

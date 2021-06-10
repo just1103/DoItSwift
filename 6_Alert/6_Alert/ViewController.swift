@@ -4,6 +4,10 @@
 //
 //  Created by Hyoju Son on 2021/06/04.
 //
+// README.md
+// * UIAlertController/UIAlertAction 및 present 메서드를 사용하여 3개 UIButton (켜기/끄기/제거 버튼)을 통해 image를 변경하고, 알림 메시지를 나타냄
+// * 제거 버튼의 경우, Alert에 대한 사용자의 선택에 따라 특정 동작을 실행함
+
 
 import UIKit
 
@@ -34,7 +38,7 @@ class ViewController: UIViewController {
                                          handler: nil) // UIAlertAction.Style.default -> .default 가능. 특별한 동작이 없을 경우 handler-nil
             
             lampOnAlert.addAction(onAction) // UIAlertController에 UIAlertAction을 추가함
-            present(lampOnAlert, animated: true, completion: nil) // Presents a view controller modally.
+            present(lampOnAlert, animated: true, completion: nil) // Presents 메서드
             
         } else { // 2)
             lampImg.image = imgOn
@@ -45,7 +49,7 @@ class ViewController: UIViewController {
     // 1) ON상태이면 Alert-전구를 끌 것인지 선택하고, 2) 이미 OFF상태라면 무동작
     @IBAction func btnLampOff(_ sender: UIButton) {
         
-        if (isLampOn == true) { // 1). if (isLampOn) {} 과 동일
+        if (isLampOn == true) { // 1) if (isLampOn) {} 과 동일
             let lampOffAlert = UIAlertController(title: "Lamp 끄기", message: "Lamp를 끄시겠습니까?", preferredStyle: .alert)
             
          // alert 창에서 전구를 끌지 말지 (off,cancel) 선택해야 하므로 Action 2개를 생성함
@@ -53,7 +57,7 @@ class ViewController: UIViewController {
                                           handler: {
                                             ACTION in self.lampImg.image = self.imgOff
                                             self.isLampOn = false
-            }) // handler-"네" 선택 시 실행할 동작을 {}에 코딩함 *self???
+            }) // handler-"네" 선택 시 실행할 동작을 {}에 코딩함
             let cancelAction = UIAlertAction(title: "아니오", style: .default, handler: nil)
             
             lampOffAlert.addAction(offAction) // Action을 각각 추가함
@@ -79,9 +83,9 @@ class ViewController: UIViewController {
                                                                             ACTION in self.lampImg.image = self.imgOff
                                                                             self.isLampOn = false
         }
-        let removeAction = UIAlertAction(title: "네, 제거합니다.", style: .destructive, handler: { // style: .default가 아니라 .destructive (*빨간색 글씨로 표시됨. Apply a style that indicates the action might change or delete data.)
+        let removeAction = UIAlertAction(title: "네, 제거합니다.", style: .destructive, handler: { // style: .default가 아니라 .destructive (*빨간색 글씨로 표시됨)
                                                                                         ACTION in self.lampImg.image = self.imgRemove
-                                                                                        self.isLampOn = false // 왜?
+                                                                                        self.isLampOn = false
         })
      
         lampRemoveAlert.addAction(onAction)
@@ -91,4 +95,3 @@ class ViewController: UIViewController {
         present(lampRemoveAlert, animated: true, completion: nil)
     }
 }
-

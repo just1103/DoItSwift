@@ -4,6 +4,10 @@
 //
 //  Created by Hyoju Son on 2021/06/04.
 //
+// README.md
+// * 5_PickerView를 응용하여 PickerView의 Component (Column)를 2개로 지정함
+// * 왼쪽 Column의 값을 선택하면 UIIabel의 파일명을 변경, 오른쪽 Column의 값을 선택하면 UIImage의 image를 변경함
+
 
 import UIKit
 
@@ -41,12 +45,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return imageFileNameArray.count
     }
     
-    // 옵션1
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        return imageFileNameArray[row]
-//    }
-    
-    // 옵션2
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let imageOfRow = UIImageView(image: imageArray[row])
         imageOfRow.frame = CGRect(x: 0, y: 0, width: 100, height: 150)
@@ -54,7 +52,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return imageOfRow
     }
     
-    // 옵션2
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return PICKER_VIEW_HEIGHT
     }
@@ -67,7 +64,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         } else {
             imageView.image = imageArray[row]
         }
-        
     }
 }
 

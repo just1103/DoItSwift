@@ -4,6 +4,10 @@
 //
 //  Created by Hyoju Son on 2021/06/06.
 //
+// README.md
+// * 4.2_Alarm 및 6_Alert를 응용함. 현재 시간 (Timer로 업데이트)과 선택 시간 (Date Picker에서 사용자가 선택)이 일치하면, UIAlertController/UIAlertAction을 활용하여 알림 메시지를 나타냄
+// * 사용자가 Alert를 확인한 이후에는 1분 동안 다시 알림 메시지가 나타나지 않도록 설정함
+
 
 import UIKit
 

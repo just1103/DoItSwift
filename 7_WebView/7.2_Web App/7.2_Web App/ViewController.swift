@@ -4,6 +4,9 @@
 //
 //  Created by Hyoju Son on 2021/06/08.
 //
+// README.md
+// * 앱이 시작될 때 WebView를 통해 HTML 파일을 읽어 디스플레이하고, Link를 통해 workflowy 웹사이트로 이동함
+
 
 import UIKit
 import WebKit
@@ -44,4 +47,3 @@ class ViewController: UIViewController, WKNavigationDelegate {
         myActivityIndicator.isHidden = true
     }
 }
-

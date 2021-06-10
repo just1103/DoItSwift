@@ -4,6 +4,10 @@
 //
 //  Created by Hyoju Son on 2021/05/09.
 //
+// README.md
+// * Timer Class (#selector Struct, NSDate Class)를 통해 1초 단위로 정보를 업데이트하며, UILabel에 현재 시간을 나타냄
+// * UIDatePicker (DateFormatter Class)를 활용하여 사용자의 선택 시간을 UILabel에 나타냄
+
 
 import UIKit
 
@@ -12,7 +16,7 @@ class ViewController: UIViewController {
 // 타이머 구동 시 실행될 함수 지정 (selector)
     let timeSelector: Selector = #selector(ViewController.updateTime)
     var interval = 1.0
-    var count = 0
+    var count = 0 // 확인용
     
     @IBOutlet var lblCurrentTime: UILabel!
     @IBOutlet var lblPickerTime: UILabel!
@@ -37,7 +41,7 @@ class ViewController: UIViewController {
     
     // timer에 따라 실행될 함수 (현재시간 정보를 interval마다 가져와서 출력해줌)
     @objc func updateTime(){
-//        lblPickerTime.text = String(count)
+//        lblPickerTime.text = String(count) // 확인용
 //        count += 1
         
         let date = NSDate()
