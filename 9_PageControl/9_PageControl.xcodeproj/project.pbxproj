@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36203D0D2674DE82009D9631 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D072674DE81009D9631 /* 04.png */; };
+		36203D0E2674DE82009D9631 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D082674DE81009D9631 /* 01.png */; };
+		36203D0F2674DE82009D9631 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D092674DE81009D9631 /* 05.png */; };
+		36203D102674DE82009D9631 /* 06.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D0A2674DE81009D9631 /* 06.png */; };
+		36203D112674DE82009D9631 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D0B2674DE81009D9631 /* 03.png */; };
+		36203D122674DE82009D9631 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 36203D0C2674DE82009D9631 /* 02.png */; };
 		36E2C85426735AAA00298199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E2C85326735AAA00298199 /* AppDelegate.swift */; };
 		36E2C85626735AAA00298199 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E2C85526735AAA00298199 /* SceneDelegate.swift */; };
 		36E2C85826735AAA00298199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E2C85726735AAA00298199 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36203D072674DE81009D9631 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		36203D082674DE81009D9631 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		36203D092674DE81009D9631 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
+		36203D0A2674DE81009D9631 /* 06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06.png; sourceTree = "<group>"; };
+		36203D0B2674DE81009D9631 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		36203D0C2674DE82009D9631 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
 		36E2C85026735AAA00298199 /* 9_PageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9_PageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E2C85326735AAA00298199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E2C85526735AAA00298199 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36203D062674DDFF009D9631 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				36203D082674DE81009D9631 /* 01.png */,
+				36203D0C2674DE82009D9631 /* 02.png */,
+				36203D0B2674DE81009D9631 /* 03.png */,
+				36203D072674DE81009D9631 /* 04.png */,
+				36203D092674DE81009D9631 /* 05.png */,
+				36203D0A2674DE81009D9631 /* 06.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		36E2C84726735AAA00298199 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +81,7 @@
 		36E2C85226735AAA00298199 /* 9_PageControl */ = {
 			isa = PBXGroup;
 			children = (
+				36203D062674DDFF009D9631 /* images */,
 				36E2C85326735AAA00298199 /* AppDelegate.swift */,
 				36E2C85526735AAA00298199 /* SceneDelegate.swift */,
 				36E2C85726735AAA00298199 /* ViewController.swift */,
@@ -124,9 +150,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36203D0E2674DE82009D9631 /* 01.png in Resources */,
 				36E2C86026735AAB00298199 /* LaunchScreen.storyboard in Resources */,
+				36203D0F2674DE82009D9631 /* 05.png in Resources */,
+				36203D0D2674DE82009D9631 /* 04.png in Resources */,
+				36203D112674DE82009D9631 /* 03.png in Resources */,
 				36E2C85D26735AAB00298199 /* Assets.xcassets in Resources */,
+				36203D102674DE82009D9631 /* 06.png in Resources */,
 				36E2C85B26735AAA00298199 /* Main.storyboard in Resources */,
+				36203D122674DE82009D9631 /* 02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
