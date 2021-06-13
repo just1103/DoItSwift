@@ -53,3 +53,10 @@
 
 ### 8.2_Map My Home
 * 8_MapView를 응용함. Segment를 추가하여 My Home에 핀을 설치함
+
+## 9_Page Control
+* UIPageControl을 활용하여 6개 이미지를 개별 페이지에 나타내고, 하단의 Page Control의 좌측/우측을 터치하면 각각 이전 이미지/다음 페이지로 이동함 
+* Page Indicator (현재 페이지 및 미선택 페이지)의 색상을 변경하는 기능을 추가
+
+### 9.2_Page Control을 통한 Label 수정
+* 9_Page Control을 응용함. UIPageControl 및 UILabel을 활용하여 화면에 페이지 번호 (1~10)를 표시함 
