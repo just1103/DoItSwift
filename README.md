@@ -60,3 +60,8 @@
 
 ### 9.2_Page Control을 통한 Label 수정
 * 9_Page Control을 응용함. UIPageControl 및 UILabel을 활용하여 화면에 페이지 번호 (1~10)를 표시함 
+
+## 10_Tab Bar Controller
+* Tab Bar Controller를 활용하여 하나의 앱에서 여러 화면 (View Controller)을 나타냄. (Tab Bar Controller에 View Control을 Embed 함)
+* 하단의 3개 탭을 터치하면 각각 다른 화면을 보여주며, 두번째 및 세번째 탭은 기존에 만든 project (2_ImageView 및 4_DatePicker)를 활용함. 기존 project의 storyboard의 View Controller 및 swift 파일 (소스코드)를 그대로 사용함
+* 초기화면 (첫번째 탭) 상단의 UIButton을 통해 두번째 및 세번째 화면으로 이동하는 기능을 추가

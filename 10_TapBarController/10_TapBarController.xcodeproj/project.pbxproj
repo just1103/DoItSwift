@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361F7C4726773F6200E346EC /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 361F7C4526773F6200E346EC /* lamp_off.png */; };
+		361F7C4826773F6200E346EC /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 361F7C4626773F6200E346EC /* lamp_on.png */; };
+		361F7C4A26773FC800E346EC /* ImageViewforTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F7C4926773FC800E346EC /* ImageViewforTabBar.swift */; };
+		361F7C4C2677501900E346EC /* DatePickerforTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361F7C4B2677501900E346EC /* DatePickerforTabBar.swift */; };
+		361F7C4E267766AB00E346EC /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 361F7C4D267766AB00E346EC /* File.png */; };
 		36203D6C2675EB95009D9631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36203D6B2675EB95009D9631 /* AppDelegate.swift */; };
 		36203D6E2675EB95009D9631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36203D6D2675EB95009D9631 /* SceneDelegate.swift */; };
 		36203D702675EB95009D9631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36203D6F2675EB95009D9631 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361F7C4526773F6200E346EC /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_off.png; path = ../../2_ImageView/2_ImageView/lamp_off.png; sourceTree = "<group>"; };
+		361F7C4626773F6200E346EC /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_on.png; path = ../../2_ImageView/2_ImageView/lamp_on.png; sourceTree = "<group>"; };
+		361F7C4926773FC800E346EC /* ImageViewforTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewforTabBar.swift; path = ../../2_ImageView/2_ImageView/2_ImageView/ImageViewforTabBar.swift; sourceTree = "<group>"; };
+		361F7C4B2677501900E346EC /* DatePickerforTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerforTabBar.swift; path = "../../4_DatePicker/4 DatePicker/DatePicker/DatePickerforTabBar.swift"; sourceTree = "<group>"; };
+		361F7C4D267766AB00E346EC /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
 		36203D682675EB95009D9631 /* 10_TapBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10_TapBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36203D6B2675EB95009D9631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36203D6D2675EB95009D9631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +66,11 @@
 		36203D6A2675EB95009D9631 /* 10_TapBarController */ = {
 			isa = PBXGroup;
 			children = (
+				361F7C4526773F6200E346EC /* lamp_off.png */,
+				361F7C4626773F6200E346EC /* lamp_on.png */,
+				361F7C4D267766AB00E346EC /* File.png */,
+				361F7C4926773FC800E346EC /* ImageViewforTabBar.swift */,
+				361F7C4B2677501900E346EC /* DatePickerforTabBar.swift */,
 				36203D6B2675EB95009D9631 /* AppDelegate.swift */,
 				36203D6D2675EB95009D9631 /* SceneDelegate.swift */,
 				36203D6F2675EB95009D9631 /* ViewController.swift */,
@@ -126,7 +141,10 @@
 			files = (
 				36203D782675EB96009D9631 /* LaunchScreen.storyboard in Resources */,
 				36203D752675EB96009D9631 /* Assets.xcassets in Resources */,
+				361F7C4826773F6200E346EC /* lamp_on.png in Resources */,
+				361F7C4E267766AB00E346EC /* File.png in Resources */,
 				36203D732675EB95009D9631 /* Main.storyboard in Resources */,
+				361F7C4726773F6200E346EC /* lamp_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361F7C4A26773FC800E346EC /* ImageViewforTabBar.swift in Sources */,
 				36203D702675EB95009D9631 /* ViewController.swift in Sources */,
+				361F7C4C2677501900E346EC /* DatePickerforTabBar.swift in Sources */,
 				36203D6C2675EB95009D9631 /* AppDelegate.swift in Sources */,
 				36203D6E2675EB95009D9631 /* SceneDelegate.swift in Sources */,
 			);
