@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dio-03-ohS">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Z8-cj-LFX">
@@ -57,7 +56,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="gOT-fH-RJk" id="RPv-jh-eu5"/>
-                        <outlet property="txMessage" destination="YiO-lX-vpS" id="U5m-CF-QIM"/>
+                        <outlet property="mainTx" destination="YiO-lX-vpS" id="U5m-CF-QIM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +69,7 @@
             <objects>
                 <viewController id="AY2-JP-oAa" customClass="EditViewController" customModule="_1_NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AC1-HR-J6l">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-eJ-tdR">
@@ -105,7 +104,7 @@
                                 <rect key="frame" x="242" y="257" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="swImageOnOff:" destination="AY2-JP-oAa" eventType="valueChanged" id="t1k-qF-3oj"/>
+                                    <action selector="switchOnOff:" destination="AY2-JP-oAa" eventType="valueChanged" id="t1k-qF-3oj"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="켜기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7u-BZ-Vnd">
@@ -121,9 +120,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit 화면" id="fHK-Sp-cWx"/>
                     <connections>
-                        <outlet property="lblWay" destination="ddC-eh-M5k" id="JeB-rT-flL"/>
-                        <outlet property="swIsOn" destination="gK0-rQ-bvW" id="SjC-5m-fWB"/>
-                        <outlet property="txMessage" destination="hHT-8z-APg" id="Pz4-0w-f7q"/>
+                        <outlet property="editTx" destination="hHT-8z-APg" id="Pz4-0w-f7q"/>
+                        <outlet property="lblSegue" destination="ddC-eh-M5k" id="JeB-rT-flL"/>
+                        <outlet property="mySwitch" destination="gK0-rQ-bvW" id="SjC-5m-fWB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vQ-NO-GyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,9 +13,13 @@ import UIKit
 class ViewController: UIViewController {
     
     var isZoom = false   // 이미지 확대 여부를 나타내는 Bool type 변수 (false = 축소 상태로 가정함)
-    var imgOn: UIImage?  // 켜진 전구 이미지가 있는 UIImage type의 변수
-    var imgOff: UIImage? // 꺼진 전구 이미지가 있는 UIImage type의 변수
     
+    var imgOn: UIImage?  // 켜진 전구 이미지가 있는 UIImage type의 변수 선언
+    var imgOff: UIImage? // 꺼진 전구 이미지가 있는 UIImage type의 변수 선언
+
+    //    var imgOn = UIImage(named: "lamp_on.png")  // 참고 - 선언, 할당을 동시에 가능함
+    //    var imgOff = UIImage(named: "lamp_off.png")
+
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var btnResize: UIButton!
     

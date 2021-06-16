@@ -62,9 +62,14 @@
 * 9_Page Control을 응용함. UIPageControl 및 UILabel을 활용하여 화면에 페이지 번호 (1~10)를 표시함 
 
 ## 10_Tab Bar Controller
-* Tab Bar Controller를 활용하여 하나의 앱에서 여러 화면 (View Controller)을 나타냄. (Tab Bar Controller에 View Control을 Embed 함)
+* Tab Bar Controller를 활용하여 하나의 앱에서 여러 화면 (View Controller)을 나타냄 (Tab Bar Controller에 View Control을 Embed 함)
 * 하단의 3개 탭을 터치하면 각각 다른 화면을 보여주며, 두번째 및 세번째 탭은 기존에 만든 project (2_ImageView 및 4_DatePicker)를 활용함. 기존 project의 storyboard의 View Controller 및 swift 파일 (소스코드)를 그대로 사용함
 * 초기화면 (첫번째 탭) 상단의 UIButton을 통해 두번째 및 세번째 화면으로 이동하는 기능을 추가
 
-## 10_New Tab
+### 10.2_New Tab
 * 10_Tab Bar Controller을 응용함. 기존 project (5_PickerView)를 사용하여 Tab Bar Controller의 탭을 1개 추가 
+
+## 11_Navigation Controller
+* Navigation Controller 및 Segue (prepare 메서드, Delegate protocol)를 활용하여 화면을 전환하면서 데이터를 전달함 (Navigation Controller에 View Control을 Embed 함)
+* 초기화면 상단의 UIBar Button (Edit Button) 또는 UIButton (수정 Button)을 터치하면, Main화면에서 Edit화면으로 이동하고 Label에 Segue 정보 ("use Bar Button" 또는 "use Button")를 나타냄. 또한 Main화면에서 Message 하단의 TextField에 입력한 텍스트를 Edit화면에서 그대로 보여줌
+* Edit화면에서 UIButton (완료 Button)을 통해 Main화면으로 재이동함. 마찬가지로 이때 Message 하단의 TextField에 텍스트를 수정하면, Main화면에서 그대로 보여줌. 또한 UISwitch를 터치하여 값을 변경한 경우, Main화면의 Lamp 이미지에 반영함
