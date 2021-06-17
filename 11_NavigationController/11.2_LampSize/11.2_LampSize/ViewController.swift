@@ -17,7 +17,7 @@ class ViewController: UIViewController, EditDelegate {
     let imgOff = UIImage(named: "lamp_off.png")
     var isLampOn = true
     
-    var isImgZoom = false
+    var isImgZoom = false // 초기화면의 이미지는 축소 상태
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,10 @@ class ViewController: UIViewController, EditDelegate {
         editViewController.editText = mainTx.text!
         editViewController.isSwitchOn = isLampOn
         
+        editViewController.isBtnZoom = isImgZoom
+        // 1) 초기화면 (Main화면) 이미지가 축소 상태, Edit화면 버튼도 "축소" 상태 (isImgZoom = false, isBtnZoom = false)
+        // 2) 다시 Edit화면으로 전환하는 경우, 변경된 isImgZoom을 Edit화면의 isBtnZoom 변수에 반영함
+        
         editViewController.delegate = self
     }
 
@@ -49,7 +53,7 @@ class ViewController: UIViewController, EditDelegate {
     func didEditMessage(_ Controller: EditViewController, message: String) {
         mainTx.text = message
     }
-    func didSwitchChange(_ Controller: EditViewController, isSwitchOn: Bool) {
+    func didchangeSwitch(_ Controller: EditViewController, isSwitchOn: Bool) {
         if isSwitchOn {
             imgView.image = imgOn
             self.isLampOn = true
@@ -57,6 +61,39 @@ class ViewController: UIViewController, EditDelegate {
             imgView.image = imgOff
             self.isLampOn = false
         }
+    }
+    func didChangeSize(_ Controller: EditViewController, isBtnZoom: Bool) {
+        
+        if isImgZoom == isBtnZoom { // !!! Main화면 이미지가 이미 확대된 경우, Edit에서 확대버튼을 눌러도 반응 없어야 함
+            return
+        }
+        
+        let scale: CGFloat = 2.0
+        var newWidth: CGFloat, newHeight: CGFloat
+        
+        if isBtnZoom { // isBtnZoom == true (Edit화면에서 버튼이 축소->확대로 변경됐으면, 이미지를 확대시켜줌)
+            newWidth = imgView.frame.width * scale
+            newHeight = imgView.frame.height * scale
+        } else {
+            newWidth = imgView.frame.width / scale
+            newHeight = imgView.frame.height / scale
+        }
+
+        isImgZoom = !isImgZoom
+        imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+    
+        
+        // 이렇게만 하면 Edit에서 btzResize를 터치하지 않아도 이미지 크기가 변경됨!!!
+//        if isBtnZoom {
+//            newWidth = imgView.frame.width / scale
+//            newHeight = imgView.frame.height / scale
+//        } else {
+//            newWidth = imgView.frame.width * scale
+//            newHeight = imgView.frame.height * scale
+//        }
+//
+//        self.isImgZoom = !isImgZoom
+//        imgView.frame.size = CGSize(width: newWidth, height: newHeight)
     }
 }
 
