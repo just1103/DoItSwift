@@ -15,6 +15,9 @@
 		36D74FB6267DF58000659144 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D74FB5267DF58000659144 /* TableViewController.swift */; };
 		36D74FB8267DF66800659144 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D74FB7267DF66800659144 /* AddViewController.swift */; };
 		36D74FBA267DF67F00659144 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D74FB9267DF67F00659144 /* DetailViewController.swift */; };
+		36D74FBE267F261200659144 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 36D74FBB267F261200659144 /* pencil.png */; };
+		36D74FBF267F261200659144 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 36D74FBC267F261200659144 /* cart.png */; };
+		36D74FC0267F261200659144 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 36D74FBD267F261200659144 /* clock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		36D74FB5267DF58000659144 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		36D74FB7267DF66800659144 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		36D74FB9267DF67F00659144 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		36D74FBB267F261200659144 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		36D74FBC267F261200659144 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		36D74FBD267F261200659144 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 		36D74FA0267CD4E000659144 /* 12_TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				36D74FBC267F261200659144 /* cart.png */,
+				36D74FBD267F261200659144 /* clock.png */,
+				36D74FBB267F261200659144 /* pencil.png */,
 				36D74FB5267DF58000659144 /* TableViewController.swift */,
 				36D74FB7267DF66800659144 /* AddViewController.swift */,
 				36D74FB9267DF67F00659144 /* DetailViewController.swift */,
@@ -130,6 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D74FC0267F261200659144 /* clock.png in Resources */,
+				36D74FBE267F261200659144 /* pencil.png in Resources */,
+				36D74FBF267F261200659144 /* cart.png in Resources */,
 				36D74FAE267CD4E100659144 /* LaunchScreen.storyboard in Resources */,
 				36D74FAB267CD4E100659144 /* Assets.xcassets in Resources */,
 				36D74FA9267CD4E000659144 /* Main.storyboard in Resources */,
