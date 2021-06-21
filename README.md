@@ -78,3 +78,9 @@
 ### 11.2_LampSize
 * 11_Navigation Controller를 응용함. Edit화면에 UIButton을 추가하여 Main화면의 이미지가 축소된 상태면, 버튼 이름을 '축소'로 표시함 (확대인 상태도 동일)
 * Edit화면의 축소 버튼을 터치하면, 버튼 이름을 '확대'로 변경하고 Main화면의 이미지를 확대함. 이때, 이미지가 이미 확대된 상태이면 이미지 크기를 유지함 (축소인 상태도 동일)
+
+## 12_Table View Controller
+* UITableViewController 및 Navigation Controller를 활용하여 목록 기능을 구현
+* 초기화면 Main View에서는 목록을 확인 가능함. 각 항목을 왼쪽으로 swipe 하면 '삭제' 버튼이 나타나며 삭제 가능함. 또한 좌측 상단의 'Edit' 버튼을 터치하면, 각 항목을 삭제 (항목 좌측 버튼을 터치) 하거나 행 이동 (항목 우측 버튼을 swipe) 이 가능함
+* 우측 상단의 '+' 버튼을 터치하면, Add View 화면으로 이동함. 새로운 항목을 작성하고 'Add' 버튼을 터치하면, Main View로 다시 이동하며 추가된 항목이 업데이트됨 (Segue 및 외부 변수 사용)
+* 목록의 각 항목을 터치하면, Detail View 화면으로 이동하며 해당 항목의 정보가 나타남 (Segue 및 prepare 함수 사용)
