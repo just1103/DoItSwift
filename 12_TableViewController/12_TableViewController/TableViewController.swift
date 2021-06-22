@@ -55,6 +55,8 @@ class TableViewController: UITableViewController {
     // insert a cell for the given index path - 변수의 내용을 Cell에 적용
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+//        print(indexPath) // 확인용 - indexPath가 [section,row]로 구성된 것을 확인 가능 (View가 load 될 때마다 [0, 0] [0, 1] [0, 2] 출력, Cell을 추가하면 ...[0, 3]까지 출력함)
+        
         // Configure the cell...
         
         cell.textLabel?.text = items[(indexPath as NSIndexPath).row] // Cell의 textLabel에 items Array를 대입 (array1[index] 형태로 값에 접근)
